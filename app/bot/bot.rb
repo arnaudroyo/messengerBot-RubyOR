@@ -19,6 +19,6 @@ Bot.on :message do |message|
     elsif message.text.include?("^^") 
         message.reply(text: '^^ rigolo cet emoji ^^')
     else
-        message.reply(text: 'hein')
+        message.reply(text: 'Mmm..?')
     end
 end
