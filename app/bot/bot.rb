@@ -18,9 +18,9 @@ Bot.on :message do |message|
         message.reply(text: 'Clara Darchand <3')
     elsif message.text.include?("^^") 
         message.reply(text: '^^ rigolo cet emoji')
-    elsif message.text.include?("oh") || message.text.include?("Oh")  
+    elsif message.text.include?("oh") || message.text.include?("Oh") || message.text.include?("Wa")  
         message.reply(text: 'Empressionant n\'est ce pas ;)')
-    elsif message.text.include?("qui") || message.text.include?("Qui")|| || message.text.include?("où")|| message.text.include?("Où") || message.text.include?("omment") || message.text.include?("uand")
+    elsif message.text.include?("qui") || message.text.include?("Qui")|| message.text.include?("où")|| message.text.include?("Où") || message.text.include?("omment") || message.text.include?("uand")|| message.text.include?("?")
         message.reply(text: 'Je ne sais pas ^^')
     else
         message.reply(text: 'Mmm..?')
