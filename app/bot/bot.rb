@@ -8,16 +8,15 @@ Facebook::Messenger::Subscriptions.subscribe(
 )
 
 Bot.on :message do |message|
-    if message.text.include? "Bonjour"
+    if message.text.include?("Bonjour") || message.text.include?("Salut") || message.text.include?("Coucou")
         message.reply(text: 'Hey !')
-    elsif message.text.include? "a+"
+    elsif message.text.include?("a+") || message.text.include?("Aurevoir")
         message.reply(text: 'Aller salut !')
-    elsif message.text.include? "ça va ?"
+    elsif message.text.include?("ça va") || message.text.include?("Ça va") || message.text.include?("ça va") 
         message.reply(text: 'Imhotep')
-    elsif message.text.include? "Qui est la plus belle ?"
+    elsif message.text.include?("Qui est la plus belle") || message.text.include?("qui est la meilleure") 
         message.reply(text: 'Clara Darchand <3')
     else
-        message.reply(text: 'ye ne compwend pa!')
-
+        message.reply(text: 'ye ne compwend pa, jsuis un po débile pour l\'instant!')
     end
 end
