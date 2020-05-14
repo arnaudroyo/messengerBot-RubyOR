@@ -18,6 +18,8 @@ Bot.on :message do |message|
         message.reply(text: 'Clara Darchand <3')
     elsif message.text.include?("^^") 
         message.reply(text: '^^ rigolo cet emoji ^^')
+    elsif message.text.include?("oh") || message.text.include?("Oh")  
+        message.reply(text: 'Empressionant n\'est ce pas ;)')
     else
         message.reply(text: 'Mmm..?')
     end
