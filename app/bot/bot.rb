@@ -1,9 +1,10 @@
 require 'facebook/messenger'
 include Facebook::Messenger
 
+
 Facebook::Messenger::Subscriptions.subscribe(
   access_token: ENV["ACCESS_TOKEN"],
-  subscribed_fields: %w['messages', 'messaging_postbacks']
+  subscribed_fields: %w[messages, messaging_postbacks]
 )
 
 Bot.on :message do |message|
