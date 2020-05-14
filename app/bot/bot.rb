@@ -2,7 +2,7 @@ require 'facebook/messenger'
 include Facebook::Messenger
 
 Facebook::Messenger::Subscriptions.subscribe(
-  access_token: access_token
+  access_token: ENV["ACCES_TOKEN"]
 )
 
 Bot.on :message do |message|
